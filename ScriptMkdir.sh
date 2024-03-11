@@ -1,4 +1,4 @@
 #!/bin/bash
 
 # Create a directory named "a"
-mkdir -p a
+sudo mkdir -p a
