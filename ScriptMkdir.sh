@@ -1,4 +1,4 @@
 #!/bin/bash
 
-# Create a directory named "a"
-sudo mkdir -p /home/testadmin/a
+# Create a directory named "b"
+sudo mkdir -p /home/testadmin/b
