@@ -4,7 +4,6 @@ sudo mkdir -p /home/testadmin/setup
 # sudo chmod 777 /opt
 # sudo mkdir -p /opt/softwareag
 # sudo chmod 777 /opt/softwareag
-sudo mkdir -p /home/testadmin/done1
 
 # Configuration
 REMOTE_USER="testadmin"          # Username to login to the remote Linux VM
@@ -21,3 +20,6 @@ if [ $? -eq 0 ]; then
 else
     echo "Error: Failed to copy file to $REMOTE_HOST:$REMOTE_DIR"
 fi
+
+
+sudo mkdir -p /home/testadmin/done1
