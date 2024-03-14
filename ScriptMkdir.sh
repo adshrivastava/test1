@@ -9,7 +9,7 @@ sudo mkdir -p /home/testadmin/setup
 REMOTE_USER="testadmin"          # Username to login to the remote Linux VM
 REMOTE_HOST="13.91.95.157"    # IP address or hostname of the remote Linux VM
 REMOTE_DIR="/home/testadmin/setup"   # Destination directory on the remote Linux VM
-LOCAL_FILE="C:\Users\natural\Desktop\Files realted to HA env settings\images\SoftwareAGInstaller-Linux_x86_64.bin"  # Path to the local file on the Windows machine
+LOCAL_FILE="C:\Users\natural\Desktop\Files realted to HA env settings\images\test.txt"  # Path to the local file on the Windows machine
 
 # Copy the file using scp
 scp "$LOCAL_FILE" "$REMOTE_USER@$REMOTE_HOST:$REMOTE_DIR"
