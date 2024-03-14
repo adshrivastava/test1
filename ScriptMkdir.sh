@@ -1,4 +1,5 @@
 sudo mkdir -p /home/testadmin/setup
+sudo chmod 777 /home/testadmin/setup
 # sudo apt update
 # sudo apt install -y openjdk-11-jdk
 # sudo chmod 777 /opt
