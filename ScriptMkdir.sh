@@ -2,8 +2,8 @@ sudo mkdir -p /home/testadmin/setup
 # sudo apt update
 # sudo apt install -y openjdk-11-jdk
 # sudo chmod 777 /opt
-# sudo mkdir -p /opt/softwareag
-# sudo chmod 777 /opt/softwareag
+sudo mkdir -p /opt/softwareag
+sudo chmod 777 /opt/softwareag
 
 # Configuration
 REMOTE_USER="testadmin"          # Username to login to the remote Linux VM
