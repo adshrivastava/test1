@@ -11,6 +11,11 @@ REMOTE_HOST="13.91.95.157"    # IP address or hostname of the remote Linux VM
 REMOTE_DIR="/home/testadmin/setup"   # Destination directory on the remote Linux VM
 LOCAL_FILE="C:\Users\natural\Desktop\Files realted to HA env settings\images\test.txt"  # Path to the local file on the Windows machine
 
+spawn ssh hostname@13.91.95.157
+expect "password:"
+send "Password1234!"
+interact
+
 # Copy the file using scp
 scp "$LOCAL_FILE" "$REMOTE_USER@$REMOTE_HOST:$REMOTE_DIR"
 
