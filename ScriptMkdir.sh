@@ -10,7 +10,7 @@ sudo chown -R testadmin:testadmin /home/testadmin/setup
 
 # Configuration
 REMOTE_USER="testadmin"          # Username to login to the remote Linux VM
-REMOTE_HOST="hostname"    # IP address or hostname of the remote Linux VM
+REMOTE_HOST="virtualMachinee8d23ed1"    # IP address or hostname of the remote Linux VM
 REMOTE_DIR="/home/testadmin/setup"   # Destination directory on the remote Linux VM
 SSH_FILE="C:\keys\nathassh.pem"
 LOCAL_FILE="C:\keys\natkey.pem"  # Path to the local file on the Windows machine
