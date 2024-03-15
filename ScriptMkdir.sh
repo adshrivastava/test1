@@ -16,7 +16,8 @@ SSH_FILE="C:\keys\nathassh.pem"
 LOCAL_FILE="C:\keys\natkey.pem"  # Path to the local file on the Windows machine
 
 # Copy the file using scp
-scp -i "$SSH_FILE" -v "$LOCAL_FILE" "$REMOTE_USER@$REMOTE_HOST:$REMOTE_DIR"
+# scp -i "$SSH_FILE" -v "$LOCAL_FILE" "$REMOTE_USER@$REMOTE_HOST:$REMOTE_DIR"
+scp -i C:\keys\nathassh.pem -v C:\keys\natkey.pem testadmin@13.91.95.157:/home/testadmin/setup
 
 # Check if the file was copied successfully
 if [ $? -eq 0 ]; then
