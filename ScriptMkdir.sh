@@ -9,22 +9,14 @@ sudo chown -R testadmin:testadmin /home/testadmin/setup
 # sudo chmod 777 /opt/softwareag
 
 # Configuration
-REMOTE_USER="testadmin"          # Username to login to the remote Linux VM
-REMOTE_HOST="13.91.95.157"    # IP address or hostname of the remote Linux VM
-REMOTE_DIR="/home/testadmin/setup"   # Destination directory on the remote Linux VM
-SSH_FILE="C:\keys\nathassh.pem"
-LOCAL_FILE="C:\keys\natkey.pem"  # Path to the local file on the Windows machine
+# REMOTE_USER="testadmin"          # Username to login to the remote Linux VM
+# REMOTE_HOST="13.91.95.157"    # IP address or hostname of the remote Linux VM
+# REMOTE_DIR="/home/testadmin/setup"   # Destination directory on the remote Linux VM
+# SSH_FILE="C:\keys\nathassh.pem"
+# LOCAL_FILE="C:\keys\natkey.pem"  # Path to the local file on the Windows machine
 
 # Copy the file using scp
 # scp -i "$SSH_FILE" -v "$LOCAL_FILE" "$REMOTE_USER@$REMOTE_HOST:$REMOTE_DIR"
 scp -i C:\keys\nathassh.pem -v C:\keys\natkey.pem testadmin@13.91.95.157:/home/testadmin/setup
-
-# Check if the file was copied successfully
-if [ $? -eq 0 ]; then
-    echo "File copied successfully to $REMOTE_HOST:$REMOTE_DIR"
-else
-    echo "Error: Failed to copy file to $REMOTE_HOST:$REMOTE_DIR"
-fi
-
 
 sudo mkdir -p /home/testadmin/done1
