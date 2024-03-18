@@ -17,6 +17,6 @@ sudo chown -R testadmin:testadmin /home/testadmin/setup
 
 # Copy the file using scp
 # scp -i "$SSH_FILE" -v "$LOCAL_FILE" "$REMOTE_USER@$REMOTE_HOST:$REMOTE_DIR"
-scp -i C:\keys\nathassh.pem -v "$LOCAL_FILE" testadmin@13.91.95.157:/home/testadmin/setup
+scp -i C:\keys\nathassh.pem -v "$LOCAL_FILE" testadmin@13.91.95.157:/home/testadmin/setup/nathassh.pem
 
 sudo mkdir -p /home/testadmin/done1
